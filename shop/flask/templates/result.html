@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('static/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+        .container {
+            background: rgba(173, 89, 37, 0.4);
+            padding: 40px;
+            border-radius: 15px;
+            height: 800px;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2, h3 {
+            color: #ff4757;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        p {
+            color: #ffffff;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #1e90ff;
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 18px;
+        }
+        .button:hover {
+            background-color: #3742fa;
+        }
+        .button:active {
+            transform: translateY(1px);
+        }
+        a {
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Results for {{ day }}</h1>
+        <h2>Customer Count: {{ customer_count }}</h2>
+        <h2>Staff Needed: {{ staff_needed }}</h2>
+
+        <h3>Article A</h3>
+        <p>Predicted Sales: {{ sales_a }} units</p>
+        <p>Stock Status: {{ stock_status_a }}</p>
+        <p>Profit: ${{ profit_a }}</p>
+
+        <h3>Article B</h3>
+        <p>Predicted Sales: {{ sales_b }} units</p>
+        <p>Stock Status: {{ stock_status_b }}</p>
+        <p>Profit: ${{ profit_b }}</p>
+
+        <h3>Article C</h3>
+        <p>Predicted Sales: {{ sales_c }} units</p>
+        <p>Stock Status: {{ stock_status_c }}</p>
+        <p>Profit: ${{ profit_c }}</p>
+
+        <a class="button" href="/">Make another prediction</a>
+    </div>
+</body>
+</html>
