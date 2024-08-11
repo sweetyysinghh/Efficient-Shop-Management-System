@@ -47,6 +47,7 @@ This project integrates hardware and software to enhance retail management by us
 ### Hardware Setup
 
 - Install sensors in key locations and connect them to the central processing unit.
+  
 
 ### Software Setup
 
@@ -59,6 +60,15 @@ This project integrates hardware and software to enhance retail management by us
   pip install -r requirements.txt
   ```
 - Configure the AI models with your store's data.
+### Demonstration Images
+## Software
+## ![HOME PAGE-1](shop/images/1.png)
+## ![HOME PAGE-2](shop/images/2.png)
+## ![PREDICTION-PAGE](shop/images/3.png)
+## Hardware
+## ![LIGHTS IN THE PRESENCE OF CUSTOMERS](shop/images/4.png)
+## ![LIGHTS WITHOUT PEOPLE](shop/images/5.png)
+## ![CUSTOMER COUNT](shop/images/6.png)
 
 ## Usage
 
